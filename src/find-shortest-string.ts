@@ -1,4 +1,3 @@
-
 /**
  * Find the shortest string in an array.
  * In the case of a tie, returns the earlier string in the array.
@@ -7,14 +6,13 @@
  * @returns the shortest string
  */
 function findShortestString(stringArr: string[]): string {
-    let shortestString = stringArr[0];
-    for (const str of stringArr) {
-      if (str.length < shortestString.length) {
-        shortestString = str;
-      }
+  let shortestString = stringArr[0];
+  for (const str of stringArr) {
+    if (str.length < shortestString.length) {
+      shortestString = str;
     }
-    return shortestString;
   }
-  
-  export default findShortestString;
-  
+  return shortestString;
+}
+
+export default findShortestString;
